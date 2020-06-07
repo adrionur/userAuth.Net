@@ -1,3 +1,4 @@
+using LoginApp.Core;
 using LoginApp.Web.Facades;
 using LoginApp.Web.Facades.Interfaces;
 using System.Web.Mvc;

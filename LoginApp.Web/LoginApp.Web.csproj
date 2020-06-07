@@ -117,7 +117,9 @@
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\FilterConfig.cs" />
@@ -156,6 +158,10 @@
     <Folder Include="Views\Home\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\LoginApp.Core\LoginApp.Core.csproj">
+      <Project>{e05f54be-16df-4de5-ad98-63bab0fe66f6}</Project>
+      <Name>LoginApp.Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\User\LoginApp.Entity.csproj">
       <Project>{4c38b3eb-c14f-48b8-bc77-4ae937fa0e31}</Project>
       <Name>LoginApp.Entity</Name>
