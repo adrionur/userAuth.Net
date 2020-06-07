@@ -1,0 +1,16 @@
+﻿@model LoginApp.Web.Models.LoginUserViewModel
+
+@{
+    ViewBag.Title = "Login";
+    Layout = null;
+}
+
+@using (Html.BeginForm("Login", "Account", FormMethod.Post))
+{
+
+    @Html.TextBoxFor(x => x.UserName)
+
+    @Html.TextBoxFor(x => x.Password)
+
+    <input type="submit" value="Gönder" />
+}
